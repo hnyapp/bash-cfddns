@@ -2,6 +2,8 @@
 Shell script to emulate DDNS client for Cloudflare-managed domain.
 I wanted to use it on busybox.
 
+Fixed not being able to get IPv4 address correctly. (2021/06/23)
+
 # Difference from the original family
 - Made it work with the sh command.
 - The record name to be updated can be specified with the first argument. (I wanted to use it with cron.)
