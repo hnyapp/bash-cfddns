@@ -20,7 +20,10 @@ zone_identifier="f1nd7h3fuck1n6z0n31d3n71f13r4l50" # Can be found in the "Overvi
 
 # Execution example
 sh cfupdater-v4 ipv4.example.org
-
 sh cfupdater-v6 ipv6.example.org
-
 sh cfupdater-dualstack dualstack.example.org
+
+# Scheduled Tasks example
+*/1 * * * * sh /etc/cfupdater-v4 ipv4.example.org 2>&1 | logger
+*/1 * * * * sh /etc/cfupdater-v6 ipv6.example.org 2>&1 | logger
+*/1 * * * * sh /etc/cfupdater-dualstack dualstack.example.org 2>&1 | logger
